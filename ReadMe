@@ -1,0 +1,7 @@
+# use this command to get the_ip_adress of docker mysql image
+
+docker inspect sfo_mysql | grep IPAddress
+
+# then for example:
+
+DATABASE_URL=mysql://root:@the_ip_adress:3306/dbname?serverVersion=5.7
